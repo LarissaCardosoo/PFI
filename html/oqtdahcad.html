@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TDAH SEM ESTIGMA</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> TDAH SEM ESTIGMA</a>
+        </div>
+
+        <ul class="menu-desktop">
+            <li> <a href="index.html"> VOLTAR </a></li>
+        </ul>
+        <ul class="menu-mobile">
+           <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+           </div>
+           <li> <a href="index.html"> VOLTAR </a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+    
+    <body>
+        <div class="img_oqe">
+        <img src="../img/foto2.png" width="600" height="400">
+
+        <div class="titulo">
+            <h1>  O QUE É TDAH?</h1>
+          </div>
+         
+      </div>
+      
+      
+        
+        <div class="text">
+            
+          <p>
+            De acordo com a Associação Brasileira do Déficit de Atenção (ABDA) “O Transtorno do Déficit de Atenção com Hiperatividade (TDAH) é um transtorno neurobiológico, de causas genéticas, que aparece na infância e frequentemente acompanha o indivíduo por toda a sua vida. Ele se caracteriza por sintomas de desatenção, inquietude e impulsividade. Ele é chamado às vezes de DDA (Distúrbio do Déficit de Atenção).”
+            O TDAH é considerado comum porém requer acompanhamentos especializados, estando presente em 3% a 5% das crianças de todo o mundo, na maioria dos casos o transtorno acompanha a pessoa em sua fase adulta, mas de uma forma mais suave.
+            De acordo com o Manual Diagnóstico e Estatístico dos Transtornos Mentais (DSM-V) existem três tipos de TDAH: desatento, hiperativo/impulsivo e misto/combinado...
+          </p>
+                <div>
+                    <a href="cadastro.html"> <button class="n-overlay">Quero saber mais!</button></a>
+                </div>
+    
+    </div>
+</section>
+<script>
+    var menuIcon = document.querySelector('.menu-icon');
+    var menuMobile = document.querySelector('.menu-mobile')
+    var iconClose = document.querySelector('.menu-mobile .icon-close')
+
+    menuIcon.addEventListener('click', function(){
+        menuMobile.classList.add('ativo')
+    });
+    iconClose.addEventListener('click', function(){
+        menuMobile.classList.remove('ativo')
+    });
+
+    var menuUsuario = document.querySelector('.menu-usuario');
+    var menuDesktop = document.querySelector('.menu-desktop')
+    var iconClose = document.querySelector('.menu-desktop .icon-close')
+
+    menuIcon.addEventListener('click', function(){
+        menuDesktop.classList.add('ativo')
+    });
+    iconClose.addEventListener('click', function(){
+        menuDesktop.classList.remove('ativo')
+    });
+</script>
+
+        </div>
+     
+        
+      
+</body>
+</html>

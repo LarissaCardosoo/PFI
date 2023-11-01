@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TDAH SEM ESTIGMA</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> TDAH SEM ESTIGMA</a>
+        </div>
+
+        <ul class="menu-desktop">
+            <li> <a href="oqtdahcad.html"> O QUE É TDAH </a></li>
+            <li> <a href="cadastro.html"> CADASTRO </a></li>
+            <li> <a href="login.html"> LOGIN </a></li>
+            </div>
+        </ul>
+        <ul class="menu-mobile">
+           <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+           </div><li> <a href="oqtdahcad.html"> O QUE É TDAH </a></li>
+           
+           <li> <a href="login.html"> PERFIL </a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        
+    </nav>
+    <section class="banner">
+        <div class="texto">
+            <h1 class="titulo"> Desmistificação do TDAH:</h1>
+            <h2 class="sub_titulo">A importância de se informar</h2>
+            <div class="botoes">
+                <a href="oqtdahcad.html"> <button class="n-overlay">Informações!</button></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile')
+        var iconClose = document.querySelector('.menu-mobile .icon-close')
+
+        menuIcon.addEventListener('click', function(){
+            menuMobile.classList.add('ativo')
+        });
+        iconClose.addEventListener('click', function(){
+            menuMobile.classList.remove('ativo')
+        });
+
+        var menuUsuario = document.querySelector('.menu-usuario');
+        var menuDesktop = document.querySelector('.menu-desktop')
+        var iconClose = document.querySelector('.menu-desktop .icon-close')
+
+        menuIcon.addEventListener('click', function(){
+            menuDesktop.classList.add('ativo')
+        });
+        iconClose.addEventListener('click', function(){
+            menuDesktop.classList.remove('ativo')
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}nav{
+    
+    background-color: #93aa7f;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    height: 100vh ;
+   background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('../img/background.jpg'); 
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.texto .titulo{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600
+}
+.texto .sub_titulo{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px; 
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.n-overlay{
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+.texto .botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+.texto .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.menu-icon{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+.menu-mobile{
+    background-color: #93aa7f;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: 0.4s;
+}
+.menu-mobile.ativo{
+    left: 0;
+}
+.menu-mobile .icon-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+/*responsivo*/
+@media (max-width: 1230px) {
+    .menu-desktop{
+        display: none;
+    }
+    .menu-icon{
+        display: block;font-size: 30px;
+    }
+    .menu-mobile li{
+        margin: 20px 0;
+    }
+    .menu-mobile li a{
+        font-size: 25px;
+    }
+    .texto .titulo {
+        font-size: 50px;
+    }
+    .texto .sub_titulo {
+        font-size: 45px;
+    }
+    .menu-usuario{
+        display: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+.menu-desktop{
+    background-color: #93aa7f;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: 0.4s;
+}
+.menu-desktop.ativo{
+    left: 0;
+}
+.menu-desktop .icon-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+}
+
+/* PAGINA OQ TDAH*/
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .img_oqe {
+    text-align: center;
+    max-width: 800px; /* Largura máxima do elemento */
+    margin: auto; /* Centraliza horizontalmente */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  .text{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px;
+  }
+  
+  /*PAGINA CAUSAS*/
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sobre{
+    width: 100%;
+    padding: 100px 0px;
+}
+.sobre img{
+    justify-content: baseline;
+    height: auto;
+    width: 350px;
+    margin-left: 60px;
+}
+.sobre-text{
+    width: 500px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 110%;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+body {
+    font-size: 16px;
+}
+
+/* oq tdah cad*/
+
